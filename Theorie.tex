@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Jonah Blank, David Rolf}
+\title{V201 Das Dulong-Petitsche Gesetz}
+\begin{document}
+\maketitle\newpage
+
+\section{Zielsetzung}
+Ziel des Versuchs ist es die Wärmekapazität verschiedener Metalle zu ermitteln, um zu bestimmen, ob die Schwingungen von Atomen im Festkörper den Gesetzen der klassischen Physik oder Quantenmechanik folgen.
+\section{Theorie}
+\subsection{Wärmekapazität}
+Die spezifische Wärmekapazität $C$ eines Körpers bezeichnet seine Proportionalität zwischen der aufgenommenen Wärme $dQ$ und der Veränderung der Temperatur $dT$.
+Es gilt:
+\begin{equation}
+C = \frac{dQ}{dT}
+\end{equation}
+Man unterscheidet dabei die Wärmekapazität bei konstantem Druck $C_p$ und die bei konstantem Volumen $C_V$.
+Der erste Hauptsatz der Thermodynamik für die Innere Energie $U$ eines Systems lautet \[dU=dQ-pdV\]
+für $V = const$ folgt $dV = 0$ und damit $dU = dQ$.
+Damit ergibt sich für die Wärmekapazitäten:
+\begin{equation}
+C_V = \left(\frac{dU}{dT}\right)_V
+\end{equation}
+und 
+\begin{equation}
+C_p = \left(\frac{dQ}{dT}\right)_p
+\end{equation}
+\subsection{Dulong-Petit in der klassischen Physik}
+Laut dem Dulong-Petitschen Gesetz beträgt die spezifische Wärmekapazität $C_V$ unabhängig von den Eigenschaften des Körpers den Wert \[C_V=3R,\]
+wobei \begin{equation}
+R = N_A k_B
+\end{equation}
+\begin{equation*}= 8,314 \frac{J}{mol K}
+\end{equation*} ist.
+Aus der klassischen Sichtweise lässt sich dies dadurch errechnen, dass die Atome in einem Festkörper sich nur in Form 
+von Schwingungen und damit wie der bekannte harmonischer Oszillator bewegen können.
+Die mittlere innere Energie beträgt in diesem Fall
+\begin{equation}
+\langle U \rangle = \langle E_{pot} \rangle + \langle E_{kin}\rangle= 2 \langle E_{kin} \rangle
+\end{equation}
+Da außerdem nach dem Äquipartitionstheorem ein Atom eine mittlere kinetische Energie \begin{equation*}
+\langle E_{kin}\rangle = \frac{1}{2}k_BT
+\end{equation*} pro Freihatsgrad f besitzt, folgt aus Gleichung (5) eine mittlere Gesamtenergie
+\begin{equation}
+\langle U \rangle= k_BT.
+\end{equation}
+Betrachtet man nun ein $mol$ Atome muss das dies mit der Avogradokonstanten $N_A = 6,2 x10^{23}$ multipliziert werden.
+Mit Gleichung (4) und unter Berücksichtigung, dass jedes Atom drei Freiheitsgrade der Rotation besitzt folgt schließlich
+\begin{equation}
+\langle U \rangle = 3RT
+\end{equation}
+und somit aus Gleichung (3)
+\begin{equation}
+C_V = 3R
+\end{equation}
+\subsection{Dulong-Petit in der Quantenmechanik}
+Bei hohen Temperaturen trifft diese spezifische Wärmekapazität auf alle festen Elemente zu, sie werden jedoch bei geringen Temperaturen beliebig klein. Da beim klassischen Ansatz davon ausgegangen wird, dass Energien in beliebig kleinen Beträgen aufgenommen und abgegeben werden können, kann dieser das Phänomen der geringen Kapazität nicht erklären.\newline
+In der Quantentheorie aber wird davon ausgegangen, dass Energie nur gequantelt, also in diskreten Beträgen aufgenommen und abgegeben wird. \newline Das Atom, also der harmonisch mit der Frequenz $\omega$ schwingende Oszillator kann deshalb seine Gesamtenergie nur um 
+\begin{equation}
+\Delta U=\hbar\,\omega
+\end{equation} oder Vielfache davon verändern.
+Daher kann man nicht mehr mit einer lineare $T$-Abhängigkeit ausgegangen, sondern muss die Boltzmann-Verteilung berücksichtigt werden.\newline
+So erhält man als neue mittlere Gesamtenergie pro Freiheitsgrad 
+\begin{equation*}
+\langle U \rangle = \frac{\hbar\,\omega}{e^{\frac{\hbar\,\omega}{k_BT}-1}}
+\end{equation*}
+und mit (7) für die Gesamtenergie von einem $mol$ Atomen
+\begin{equation}
+\langle U \rangle = \frac{3N_A\hbar\,\omega}{e^{\frac{\hbar\,\omega}{k_BT}-1}}.
+\end{equation}
+Für $T\rightarrow0$ geht auch $\langle U \rangle$ gegen null und beschreibt somit die abweichenden $C_V$-Werte für geringe Temperaturen.
+Für hohe Temperaturen wird $\langle U \rangle \approx 3N_Ak_BT= 3RT$ wie im klassischen Fall.
+\newpage
+\section{Durchführung}
+Zum Befüllen des Kalorimeters wir immer dasselbe Becherglas verwendet, dessen Masse zuvor bestimmt wurde. Nach jeder Bestimmung der jeweiligen Mischtemperatur wird das Kalorimeter geleert, neu befüllt und seine Temperatur notiert. Weiterhin wird auch jedes Mal die Füllmasse des Kalorimeters bestimmt.
+\subsection{Wärmekapazität des Kalorimeters}
+Zur Bestimmung der Wärmekapazität des Kalorimeters wird das Becherglas gefüllt, die Masse des Wassers bestimmt und das Kalorimeter mit einem Teil des Wassers befüllt. Es wird die Temperatur gemessen und der Rest des Wassers im Glas auf einer Herdplatte erhitzt. Die Temperatur des heißen Wassers wird gemessen und der restlich Inhalt des Glases in das Kalorimeter gegeben. Die sich daraus ergebende Mischtemperatur wird notiert.
+\subsection{Wärmekapazität der Proben}
+Es wird je drei Mal eine Bleiprobe, eine Kupferprobe und eine Graphitprobe in einem Wasserbad erhitzt, die Temperatur notiert und in das kalte Wasser des Kalorimeters getaucht. Die entstehende Mischtemperatur wird notiert.
+\newpage
+\section{Quellen}
+
+\end{document}
